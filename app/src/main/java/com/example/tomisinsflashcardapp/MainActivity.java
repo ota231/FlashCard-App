@@ -15,14 +15,28 @@ public class MainActivity extends AppCompatActivity {
 
         TextView flashcard_question = findViewById(R.id.flashcard_question_textview);
         TextView flashcard_answer = findViewById(R.id.flashcard_answer_textview);
+        TextView clinton = findViewById(R.id.clinton_textview);
+        TextView bush = findViewById(R.id.bush_textview);
 
-        flashcard_question.setOnClickListener(new View.OnClickListener() {
+        flashcard_answer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                flashcard_question.setVisibility(View.INVISIBLE);
-                flashcard_answer.setVisibility(View.VISIBLE);
+                flashcard_answer.setBackgroundColor(getResources().getColor(R.color.my_green, null));
             }
         });
 
+        clinton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clinton.setBackgroundColor(getResources().getColor(R.color.my_red, null));
+            }
+        });
+
+        bush.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bush.setBackgroundColor(getResources().getColor(R.color.my_red, null));
+            }
+        });
     }
 }
