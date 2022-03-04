@@ -55,6 +55,25 @@
         android:layout_marginTop="10dp"
         android:layout_below="@id/clinton_textview"/>
 
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/openeye_imageview"
+        android:src="@drawable/open_eye"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/closedeye_imageview"
+        android:src="@drawable/closed_eye"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
 
 </RelativeLayout>
 

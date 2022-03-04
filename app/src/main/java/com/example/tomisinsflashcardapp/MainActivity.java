@@ -2,6 +2,7 @@ package com.example.tomisinsflashcardapp;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         TextView flashcard_answer = findViewById(R.id.flashcard_answer_textview);
         TextView clinton = findViewById(R.id.clinton_textview);
         TextView bush = findViewById(R.id.bush_textview);
+        ImageView open_eye = findViewById(R.id.openeye_imageview);
+        ImageView closed_eye = findViewById(R.id.closedeye_imageview);
 
         flashcard_answer.setOnClickListener(new View.OnClickListener() {
             @Override
