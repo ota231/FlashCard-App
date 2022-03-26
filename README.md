@@ -5,7 +5,7 @@ Saves each card so that when app restarts, user can retrieve card.
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/aiUOjpLVSI.gif" width=200><br>
+<img src="http://g.recordit.co/evf3X6xDMq.gif" width=200><br>
 
 ## Required
 - [x] User can create a card and still see their created card when the app is relaunched.
