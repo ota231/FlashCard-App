@@ -39,4 +39,20 @@
         android:layout_margin="20dp"
         android:hint="Enter Your Answer Here" />
 
+    <EditText
+        android:id="@+id/wrong1_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/my_answer_edittext"
+        android:layout_margin="20dp"
+        android:hint="Enter a Wrong Answer Here" />
+
+    <EditText
+        android:id="@+id/wrong2_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/wrong1_edittext"
+        android:layout_margin="20dp"
+        android:hint="Enter another Wrong Answer Here" />
+
 </RelativeLayout>
