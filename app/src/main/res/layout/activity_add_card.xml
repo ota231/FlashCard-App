@@ -55,5 +55,4 @@
         android:layout_margin="20dp"
         android:hint="Enter another Wrong Answer Here" />
 
-
 </RelativeLayout>

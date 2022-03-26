@@ -54,14 +54,10 @@
     <TextView
         android:id="@+id/flashcard_answer_textview"
         android:layout_width="match_parent"
-<<<<<<< Updated upstream
-        android:layout_height="100dp"
-=======
         android:layout_height="70dp"
         android:layout_below="@id/next_imageview"
         android:layout_marginTop="20dp"
         android:background="@color/teal_200"
->>>>>>> Stashed changes
         android:gravity="center"
         android:text="Barack Obama"
         android:textColor="@color/white"
@@ -70,14 +66,10 @@
     <TextView
         android:id="@+id/wrong_answer1_textview"
         android:layout_width="match_parent"
-<<<<<<< Updated upstream
-        android:layout_height="100dp"
-=======
         android:layout_height="70dp"
         android:layout_below="@id/flashcard_answer_textview"
         android:layout_marginTop="10dp"
         android:background="@color/teal_200"
->>>>>>> Stashed changes
         android:gravity="center"
         android:text="Bill Clinton"
         android:textColor="@color/white"
@@ -86,7 +78,7 @@
     <TextView
         android:id="@+id/wrong_answer2_textview"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:gravity="center"
         android:text="George H.W. Bush"
         android:textSize="40sp"
@@ -96,26 +88,24 @@
         android:layout_below="@id/wrong_answer1_textview"/>
 
     <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:id="@+id/openeye_imageview"
-        android:src="@drawable/open_eye"
-        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/open_eye_imageview"
+        android:src="@drawable/ic_visibility_on"
+        android:layout_marginBottom="10dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"/>
 
     <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:id="@+id/closedeye_imageview"
-        android:src="@drawable/closed_eye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/closed_eye_imageview"
+        android:src="@drawable/ic_visibility_off"
         android:layout_marginBottom="10dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:visibility="invisible"/>
 
-<<<<<<< Updated upstream
-=======
     <ImageView
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -124,7 +114,14 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="10dp"/>
->>>>>>> Stashed changes
 
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/edit_button_imageview"
+        android:src="@drawable/ic_edit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"/>
 </RelativeLayout>
 

@@ -5,11 +5,9 @@
       <map>
         <entry key="..\:/TechStuffs/Code/MobileDevelopment/Projects/TomisinsFlashCardApp/app/src/main/res/drawable/card_background.xml" value="0.290625" />
         <entry key="..\:/TechStuffs/Code/MobileDevelopment/Projects/TomisinsFlashCardApp/app/src/main/res/drawable/closed_eye.xml" value="0.290625" />
-<<<<<<< Updated upstream
         <entry key="..\:/TechStuffs/Code/MobileDevelopment/Projects/TomisinsFlashCardApp/app/src/main/res/drawable/open_eye.xml" value="0.290625" />
         <entry key="..\:/TechStuffs/Code/MobileDevelopment/Projects/TomisinsFlashCardApp/app/src/main/res/drawable/solid_color_shape.xml" value="0.290625" />
         <entry key="..\:/TechStuffs/Code/MobileDevelopment/Projects/TomisinsFlashCardApp/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
-=======
         <entry key="..\:/TechStuffs/Code/MobileDevelopment/Projects/TomisinsFlashCardApp/app/src/main/res/drawable/ic_edit.xml" value="0.2115" />
         <entry key="..\:/TechStuffs/Code/MobileDevelopment/Projects/TomisinsFlashCardApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2115" />
         <entry key="..\:/TechStuffs/Code/MobileDevelopment/Projects/TomisinsFlashCardApp/app/src/main/res/drawable/ic_visibility_off.xml" value="0.2115" />
@@ -18,7 +16,6 @@
         <entry key="..\:/TechStuffs/Code/MobileDevelopment/Projects/TomisinsFlashCardApp/app/src/main/res/drawable/solid_color_shape.xml" value="0.290625" />
         <entry key="..\:/TechStuffs/Code/MobileDevelopment/Projects/TomisinsFlashCardApp/app/src/main/res/layout/activity_add_card.xml" value="0.27447916666666666" />
         <entry key="..\:/TechStuffs/Code/MobileDevelopment/Projects/TomisinsFlashCardApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
->>>>>>> Stashed changes
       </map>
     </option>
   </component>

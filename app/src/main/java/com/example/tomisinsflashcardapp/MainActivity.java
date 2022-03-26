@@ -1,5 +1,6 @@
 package com.example.tomisinsflashcardapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -21,19 +22,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-<<<<<<< Updated upstream
-        TextView flashcard_question = findViewById(R.id.flashcard_question_textview);
-        TextView flashcard_answer = findViewById(R.id.flashcard_answer_textview);
-        TextView clinton = findViewById(R.id.clinton_textview);
-        TextView bush = findViewById(R.id.bush_textview);
-        ImageView open_eye = findViewById(R.id.openeye_imageview);
-        ImageView closed_eye = findViewById(R.id.closedeye_imageview);
-
-        flashcard_answer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                flashcard_answer.setBackgroundColor(getResources().getColor(R.color.my_green, null));
-=======
         TextView question = findViewById(R.id.flashcard_question_textview);
         TextView answer = findViewById(R.id.flashcard_answer_textview);
         TextView wrongAnswer1 = findViewById(R.id.wrong_answer1_textview);
@@ -69,29 +57,26 @@ public class MainActivity extends AppCompatActivity {
                 answer.setVisibility(View.VISIBLE);
                 wrongAnswer1.setVisibility(View.VISIBLE);
                 wrongAnswer2.setVisibility(View.VISIBLE);
->>>>>>> Stashed changes
             }
         });
 
-        clinton.setOnClickListener(new View.OnClickListener() {
+        closedEye.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-<<<<<<< Updated upstream
-                clinton.setBackgroundColor(getResources().getColor(R.color.my_red, null));
-=======
                 openEye.setVisibility(View.VISIBLE);
                 closedEye.setVisibility(View.INVISIBLE);
                 answer.setVisibility(View.INVISIBLE);
                 wrongAnswer1.setVisibility(View.INVISIBLE);
                 wrongAnswer2.setVisibility(View.INVISIBLE);
->>>>>>> Stashed changes
+
             }
         });
 
-        bush.setOnClickListener(new View.OnClickListener() {
+        add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                bush.setBackgroundColor(getResources().getColor(R.color.my_red, null));
+                Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
+                startActivityForResult(intent, 100);
             }
         });
 
@@ -136,8 +121,7 @@ public class MainActivity extends AppCompatActivity {
             wrongAnswer2.setVisibility(View.INVISIBLE);
         }
     }
-<<<<<<< Updated upstream
-=======
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode,  Intent my_data) {
@@ -164,10 +148,8 @@ public class MainActivity extends AppCompatActivity {
             allFlashcards = flashcardDatabase.getAllCards();
         }
     }
-
     FlashcardDatabase flashcardDatabase;
     List<Flashcard> allFlashcards;
     int currentCardDisplayedIndex = 0;
 
->>>>>>> Stashed changes
 }
