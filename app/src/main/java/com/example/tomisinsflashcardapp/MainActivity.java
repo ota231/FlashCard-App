@@ -3,12 +3,15 @@ package com.example.tomisinsflashcardapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
+import com.plattysoft.leonids.ParticleSystem;
 
 import java.util.List;
 
@@ -45,9 +48,35 @@ public class MainActivity extends AppCompatActivity {
         ImageView delete_button = findViewById(R.id.delete_imageview);
         TextView emptyState = findViewById(R.id.nocards_textview);
 
-        answer.setOnClickListener(view -> answer.setBackgroundColor(getResources().getColor(R.color.my_green, null)));
-        wrongAnswer1.setOnClickListener(view -> wrongAnswer1.setBackgroundColor(getResources().getColor(R.color.my_red, null)));
-        wrongAnswer2.setOnClickListener(view -> wrongAnswer2.setBackgroundColor(getResources().getColor(R.color.my_red, null)));
+        answer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                answer.setBackgroundColor(getResources().getColor(R.color.my_green, null));
+                wrongAnswer1.setBackgroundColor(getResources().getColor(R.color.teal_200, null));
+                wrongAnswer2.setBackgroundColor(getResources().getColor(R.color.teal_200, null));
+                new ParticleSystem(MainActivity.this, 100, R.drawable.confetti, 3000)
+                        .setSpeedRange(0.2f, 0.5f)
+                        .oneShot(findViewById(R.id.flashcard_answer_textview), 100);
+            }
+        });
+
+        wrongAnswer1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                answer.setBackgroundColor(getResources().getColor(R.color.teal_200, null));
+                wrongAnswer1.setBackgroundColor(getResources().getColor(R.color.my_red, null));
+                wrongAnswer2.setBackgroundColor(getResources().getColor(R.color.teal_200, null));
+            }
+        });
+
+        wrongAnswer2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                answer.setBackgroundColor(getResources().getColor(R.color.teal_200, null));
+                wrongAnswer1.setBackgroundColor(getResources().getColor(R.color.teal_200, null));
+                wrongAnswer2.setBackgroundColor(getResources().getColor(R.color.my_red, null));
+            }
+        });
 
         openEye.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +112,35 @@ public class MainActivity extends AppCompatActivity {
         next_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                final Animation leftOutAnim = AnimationUtils.loadAnimation(view.getContext(), R.anim.left_out);
+                final Animation rightInAnim = AnimationUtils.loadAnimation(view.getContext(), R.anim.right_in);
+
+                findViewById(R.id.flashcard_question_textview).startAnimation(leftOutAnim);
+                findViewById(R.id.flashcard_answer_textview).startAnimation(leftOutAnim);
+                findViewById(R.id.wrong_answer1_textview).startAnimation(leftOutAnim);
+                findViewById(R.id.wrong_answer2_textview).startAnimation(leftOutAnim);
+
+
+                leftOutAnim.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                        // this method is called when the animation first starts
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        findViewById(R.id.flashcard_question_textview).startAnimation(rightInAnim);
+                        findViewById(R.id.flashcard_answer_textview).startAnimation(rightInAnim);
+                        findViewById(R.id.wrong_answer1_textview).startAnimation(rightInAnim);
+                        findViewById(R.id.wrong_answer2_textview).startAnimation(rightInAnim);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+                        // we don't need to worry about this method
+                    }
+                });
+
                 if (allFlashcards.size() == 0)
                     return;
                 currentCardDisplayedIndex++;

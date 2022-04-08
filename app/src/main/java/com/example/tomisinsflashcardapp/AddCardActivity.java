@@ -14,6 +14,7 @@ public class AddCardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_card);
+        overridePendingTransition(R.anim.right_in, R.anim.left_out);
 
         ImageView remove_button = findViewById(R.id.remove_button_imageview);
         ImageView save_button = findViewById(R.id.save_button_imageview);
