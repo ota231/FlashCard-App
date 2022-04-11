@@ -54,6 +54,23 @@ public class MainActivity extends AppCompatActivity {
                 answer.setBackgroundColor(getResources().getColor(R.color.my_green, null));
                 wrongAnswer1.setBackgroundColor(getResources().getColor(R.color.teal_200, null));
                 wrongAnswer2.setBackgroundColor(getResources().getColor(R.color.teal_200, null));
+
+                // get the center for the clipping circle
+                int cx = answer.getWidth() / 2;
+                int cy = answer.getHeight() / 2;
+
+                // get the final radius for the clipping circle
+                float finalRadius = (float) Math.hypot(cx, cy);
+
+                // create the animator for this view (the start radius is zero)
+                Animator anim = ViewAnimationUtils.createCircularReveal(answer, cx, cy, 0f, finalRadius);
+
+                // hide the question and show the answer to prepare for playing the animation!
+                answer.setVisibility(View.VISIBLE);
+
+                anim.setDuration(3000);
+                anim.start();
+
                 new ParticleSystem(MainActivity.this, 100, R.drawable.confetti, 3000)
                         .setSpeedRange(0.2f, 0.5f)
                         .oneShot(findViewById(R.id.flashcard_answer_textview), 100);
