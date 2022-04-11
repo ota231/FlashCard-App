@@ -4,7 +4,7 @@
 Flashcard App Animation & Styling
 
 ### App Walk-though
-<img src="http://g.recordit.co/tTvm8ljjV2.gif" width=200><br>
+<img src="http://g.recordit.co/2icSebkYW4.gif" width=200><br>
 
 ## Required
 - [x] User sees a transition animation when going from the main screen to the add card screen.
