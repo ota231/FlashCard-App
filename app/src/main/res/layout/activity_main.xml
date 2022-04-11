@@ -61,11 +61,7 @@
     <TextView
         android:id="@+id/flashcard_answer_textview"
         android:layout_width="match_parent"
-<<<<<<< Updated upstream
-        android:layout_height="70dp"
-=======
         android:layout_height="50dp"
->>>>>>> Stashed changes
         android:layout_below="@id/next_imageview"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="20dp"
@@ -78,11 +74,7 @@
     <TextView
         android:id="@+id/wrong_answer1_textview"
         android:layout_width="match_parent"
-<<<<<<< Updated upstream
-        android:layout_height="70dp"
-=======
         android:layout_height="50dp"
->>>>>>> Stashed changes
         android:layout_below="@id/flashcard_answer_textview"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="20dp"
@@ -95,11 +87,7 @@
     <TextView
         android:id="@+id/wrong_answer2_textview"
         android:layout_width="match_parent"
-<<<<<<< Updated upstream
-        android:layout_height="70dp"
-=======
         android:layout_height="50dp"
->>>>>>> Stashed changes
         android:gravity="center"
         android:text="George H.W. Bush"
         android:textSize="30sp"
@@ -114,11 +102,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/open_eye_imageview"
         android:src="@drawable/ic_visibility_on"
-<<<<<<< Updated upstream
-        android:layout_marginBottom="10dp"
-=======
         android:layout_marginBottom="20dp"
->>>>>>> Stashed changes
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"/>
 
@@ -127,11 +111,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/closed_eye_imageview"
         android:src="@drawable/ic_visibility_off"
-<<<<<<< Updated upstream
-        android:layout_marginBottom="10dp"
-=======
         android:layout_marginBottom="20dp"
->>>>>>> Stashed changes
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:visibility="invisible"/>
@@ -144,26 +124,16 @@
         android:src="@drawable/ic_add_button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-<<<<<<< Updated upstream
-        android:layout_marginBottom="10dp"/>
-=======
         android:layout_marginBottom="20dp"/>
->>>>>>> Stashed changes
 
     <ImageView
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:id="@+id/edit_button_imageview"
         android:src="@drawable/ic_edit"
-<<<<<<< Updated upstream
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="10dp"/>
-=======
         android:layout_marginLeft="20dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="20dp"/>
->>>>>>> Stashed changes
 </RelativeLayout>
 
